@@ -151,8 +151,8 @@
 			},
 			get_secret(code) {
 				this.$request('https://api.weixin.qq.com/sns/jscode2session', 'get', {
-					appid: 'wxafd51a9aec0d24ce',
-					secret: 'a08337afd51e7928eb5b0b288a7b824f',
+					appid: '',
+					secret: '',
 					js_code: code,
 					grant_type: 'authorization_code'
 				}).then(res => {
