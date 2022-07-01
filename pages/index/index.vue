@@ -162,7 +162,7 @@
 	}
 	
 	.top_bg{
-		animation: animate 15s infinite;
+		/* animation: animate 15s infinite; */
 	}
 	
 </style>

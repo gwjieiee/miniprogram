@@ -22,10 +22,9 @@
 				autoplay: true,
 				interval: 3000,
 				imgList: [
-					{url:"../../static/lixian/lixian1.jpg"},
-					{url:"../../static/lixian/lixian2.jpg"},
-					// {url:"../../static/lixian/lixian3.jpg"},
-					{url:"../../static/lixian/lixian4.jpg"}
+					{url:'https://wx3.sinaimg.cn/mw2000/7e298279ly1h3qmse2fi0j20u014f79p.jpg'},
+					{url:'https://wx3.sinaimg.cn/mw2000/7e298279ly1h3qmsecwxuj20u014fdjv.jpg'},
+					{url:'https://wx4.sinaimg.cn/mw2000/7e298279ly1h3qmsepfdzj20u014fq8m.jpg'}
 				]
 			}
 		},
