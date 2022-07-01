@@ -47,7 +47,7 @@
 				"pagePath":"pages/lixian/lixian",
 				"iconPath":"static/favorite.png",
 				"selectedIconPath":"static/favorite1.png",
-				"text":"something"
+				"text":"lixian"
 			},
 			{
 				"pagePath":"pages/gwjieiee/gwjieiee",

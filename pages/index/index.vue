@@ -6,19 +6,20 @@
 				<view class="weather_tem">
 					{{tem}}°C
 				</view>
-				<view class="weather_description">{{wea}}</view>
+				<view class="weather_description">
+					{{wea}}（{{tem_range}}）
+				</view>
 			</view>
-			<image class="top_bg" src="../../static/index/lixian.jpg"></image>
+			<image class="top_bg" src="../../static/index/bg.jpg"></image>
 		</view>
-		
 		<!-- <li-info :list="list"></li-info> -->
 		<view class="middle">
 			<view style="display: flex;" v-for="(wea,index) in weather" :key="index">
-				<view>{{wea.day}}</view>
+				<view>{{wea.date.substr(5,9)}}</view>
 				<view>{{wea.wea}}</view>
 				<view>{{wea.tem2}}-{{wea.tem1}}°C</view>
 			</view>
-			<image class="middle_bg" src="../../static/index/q_lixian.jpg"></image>
+			<!-- <image class="middle_bg" src="../../static/index/q_lixian.jpg"></image> -->
 		</view>
 		<!-- <view class="bottom"></view> -->
 		
@@ -40,7 +41,8 @@
 				weather:[],
 				tem:'',
 				wea:'',
-				wea_img:''
+				wea_img:'',
+				tem_range:''
 			}
 		},
 		components:{
@@ -69,6 +71,7 @@
 					this.weather = res.data;
 					this.wea = this.weather[0].wea;
 					this.tem = this.weather[0].tem;
+					this.tem_range = `${this.weather[0].tem2}°C~${this.weather[0].tem1}°C`
 				})
 			}
 		}
@@ -76,9 +79,9 @@
 </script>
 
 <style>
-	page {
+	/* page {
 		background-color: #f8f8f8;
-	}
+	} */
 	.top{
 		width: 100%;
 		height: 390upx;
@@ -95,7 +98,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		opacity: 0.5;
+		opacity: 0.6;
 	}
 
 	.location{
@@ -126,13 +129,13 @@
 	}
 
 	.middle{
-		margin-top: 30upx;
-		width: 100%;
+		/* margin-top: 30upx; */
+		width: 95%;
 		height: 700upx;
-		background-color: #fff;
-		/* border-radius: 20upx; */
-		position: relative;
-		font-size: 30upx;
+		background: rgba(176,212,210,.7);
+		margin: 15px auto;
+		border-radius: 10px;
+		font-size: 16px;
 		overflow: hidden;
 	}
 	
@@ -149,6 +152,7 @@
 		height: 100upx;
 		line-height: 100upx;
 		text-align: center;
+		color: #fff;
 	}
 	
 	/* 图片放大缩小动画 */
