@@ -6,8 +6,6 @@ function	getValue(key){
 		let res = uni.getStorageSync(key)
 		if(res){
 			return res
-		}else{
-			console.log('不存在该属性')
 		}
 	}
 function	delValue(key){

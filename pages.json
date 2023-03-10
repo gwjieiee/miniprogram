@@ -4,63 +4,60 @@
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "gwjieiee",
-				"navigationBarTextStyle":"white",
-				"navigationBarBackgroundColor":"#B0D4D2"
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#B0D4D2"
+			}
+		}, {
+			"path": "pages/gwjieiee/gwjieiee",
+			"style": {
+				"navigationBarTitleText": "my",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#B0D4D2"
+			}
+		}, {
+			"path": "pages/lixian/lixian",
+			"style": {
+				"navigationBarTitleText": "lixian",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#B0D4D2"
 			}
 		}
-	    ,{
-            "path" : "pages/gwjieiee/gwjieiee",
-            "style" : {
-				"navigationBarTitleText": "my",
-				"navigationBarTextStyle":"white",
-				"navigationBarBackgroundColor":"#B0D4D2"
-			}
-        }
-        ,{
-            "path" : "pages/lixian/lixian",
-            "style" : {
-				"navigationBarTitleText": "lixian",
-				"navigationBarTextStyle":"white",
-				"navigationBarBackgroundColor":"#B0D4D2"
-			}
-        }
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"tabBar":{
-		"color":"#B0D4D2",
-		"selectedColor":"#6EACA7",
-		"borderStyle":"white",
-		"backgroundColor":"#fff",
-		"list":[
-			{
-				"pagePath":"pages/index/index",
-				"iconPath":"static/index.png",
-				"selectedIconPath":"static/index1.png",
-				"text":"index"
+	"tabBar": {
+		"color": "#B0D4D2",
+		"selectedColor": "#6EACA7",
+		"borderStyle": "white",
+		"backgroundColor": "#fff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/index.png",
+				"selectedIconPath": "static/index1.png",
+				"text": "index"
 			},
 			{
-				"pagePath":"pages/lixian/lixian",
-				"iconPath":"static/favorite.png",
-				"selectedIconPath":"static/favorite1.png",
-				"text":"lixian"
+				"pagePath": "pages/lixian/lixian",
+				"iconPath": "static/favorite.png",
+				"selectedIconPath": "static/favorite1.png",
+				"text": "lixian"
 			},
 			{
-				"pagePath":"pages/gwjieiee/gwjieiee",
-				"iconPath":"static/myself.png",
-				"selectedIconPath":"static/myself1.png",
-				"text":"my"
+				"pagePath": "pages/gwjieiee/gwjieiee",
+				"iconPath": "static/myself.png",
+				"selectedIconPath": "static/myself1.png",
+				"text": "my"
 			}
 		]
-		
-		
-		
-		
+
+
+
+
 	}
-	
-	
+
+
 }

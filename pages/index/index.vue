@@ -12,24 +12,17 @@
 			</view>
 			<image class="top_bg" src="../../static/index/bg.jpg"></image>
 		</view>
-		<!-- <li-info :list="list"></li-info> -->
 		<view class="middle">
 			<view style="display: flex;" v-for="(wea,index) in weather" :key="index">
 				<view>{{wea.date.substr(5,9)}}</view>
 				<view>{{wea.wea}}</view>
 				<view>{{wea.tem2}}-{{wea.tem1}}°C</view>
 			</view>
-			<!-- <image class="middle_bg" src="../../static/index/q_lixian.jpg"></image> -->
 		</view>
-		<!-- <view class="bottom"></view> -->
-		
-		
-		
 	</view>
 </template>
 
 <script>
-	import liInfo from '@/pages/index/li-info.vue'
 	export default {
 		data() {
 			return {
@@ -44,9 +37,6 @@
 				wea_img:'',
 				tem_range:''
 			}
-		},
-		components:{
-			liInfo
 		},
 		onLoad() {
 			this.getweather();
@@ -132,7 +122,7 @@
 		/* margin-top: 30upx; */
 		width: 95%;
 		height: 700upx;
-		background: rgba(176,212,210,.7);
+		background: rgba(176,212,210,.5);
 		margin: 15px auto;
 		border-radius: 10px;
 		font-size: 16px;
@@ -153,20 +143,6 @@
 		line-height: 100upx;
 		text-align: center;
 		color: #fff;
-	}
-	
-	/* 图片放大缩小动画 */
-	@keyframes animate{
-		from{
-			transform: scale(1);
-		}
-		to{
-			transform: scale(1.5);
-		}
-	}
-	
-	.top_bg{
-		/* animation: animate 15s infinite; */
 	}
 	
 </style>
